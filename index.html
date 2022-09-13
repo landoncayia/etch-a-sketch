@@ -11,9 +11,16 @@
 <body>
   <h1>Etch A Sketch</h1>
   <div id="grid-wrapper">
-    <div id="set-color">
-      <p>Choose a color:</p>
-      <input type="color" id="color-picker">
+    <div id="settings-container">
+      <div id="set-color" class="grid-setting">
+        <input type="color" id="color-picker" name="color">
+        <label for="color">Color</label>
+      </div>
+
+      <div id="set-gridsize" class="grid-setting">
+        <input type="range" id="grid-slider" name="size" min="8" max="32" value="16">
+        <label for="size">Grid size</label>
+      </div>
     </div>
 
     <div id="grid-container"></div>

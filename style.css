@@ -14,6 +14,10 @@ input {
   text-align: right;
 }
 
+button {
+  align-self: center;
+}
+
 #grid-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -28,6 +32,8 @@ input {
 }
 
 #grid-container {
+  width: 500px;
+  height: 500px;
   display: grid;
   /* grid-template-columns is set by JS; default below */
   /* grid-template-columns: repeat(16, 30px); */
@@ -35,8 +41,6 @@ input {
 }
 
 #grid-square {
-  width: 30px;
-  height: 30px;
   border-top: 1px solid rgb(85, 85, 85);
   border-left: 1px solid rgb(85, 85, 85);
 }
